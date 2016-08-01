@@ -19,7 +19,7 @@ class ViewController: UIViewController {
     var userIsInTheMiddleOfTyping = false
     
     // IBActions
-    @IBAction func touchDigit(sender: AnyObject) {
+    @IBAction func touchDigit(_ sender: AnyObject) {
         
         let digit = sender.currentTitle!
         if userIsInTheMiddleOfTyping {
@@ -34,7 +34,7 @@ class ViewController: UIViewController {
         
     }
 
-    @IBAction func clear(sender: AnyObject) {
+    @IBAction func clear(_ sender: AnyObject) {
         display!.text = "0"
     }
 }
